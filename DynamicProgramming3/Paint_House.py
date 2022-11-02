@@ -1,3 +1,5 @@
+#Time_Complexity: O(n) 
+#Space_Complexity : O(1)
 def mincost(self,costs):
     for i in range(len(costs)-2,-1,-1):
         costs[i][0] += min(costs[i+1][1],costs[i+1][2])
